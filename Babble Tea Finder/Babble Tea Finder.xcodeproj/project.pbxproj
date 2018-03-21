@@ -13,6 +13,10 @@
 		6B92EAD72062896B00C051C7 /* Babble_Tea_Finder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B92EAD52062896B00C051C7 /* Babble_Tea_Finder.xcdatamodeld */; };
 		6B92EAD92062896B00C051C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B92EAD82062896B00C051C7 /* Assets.xcassets */; };
 		6B92EADC2062896B00C051C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B92EADA2062896B00C051C7 /* LaunchScreen.storyboard */; };
+		6B92EAE420628A5800C051C7 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B92EAE320628A5800C051C7 /* CoreDataStack.swift */; };
+		6B92EAE720628A9D00C051C7 /* attribution.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6B92EAE520628A9D00C051C7 /* attribution.txt */; };
+		6B92EAE820628A9D00C051C7 /* seed.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B92EAE620628A9D00C051C7 /* seed.json */; };
+		6B92EAEA206299F800C051C7 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B92EAE9206299F800C051C7 /* FilterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		6B92EAD82062896B00C051C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B92EADB2062896B00C051C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B92EADD2062896B00C051C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B92EAE320628A5800C051C7 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		6B92EAE520628A9D00C051C7 /* attribution.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = attribution.txt; sourceTree = "<group>"; };
+		6B92EAE620628A9D00C051C7 /* seed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = seed.json; sourceTree = "<group>"; };
+		6B92EAE9206299F800C051C7 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 			children = (
 				6B92EACE2062896B00C051C7 /* AppDelegate.swift */,
 				6B92EAD02062896B00C051C7 /* ViewController.swift */,
+				6B92EAE9206299F800C051C7 /* FilterViewController.swift */,
+				6B92EAE320628A5800C051C7 /* CoreDataStack.swift */,
+				6B92EAE520628A9D00C051C7 /* attribution.txt */,
+				6B92EAE620628A9D00C051C7 /* seed.json */,
 				6B92EAD22062896B00C051C7 /* Main.storyboard */,
 				6B92EAD82062896B00C051C7 /* Assets.xcassets */,
 				6B92EADA2062896B00C051C7 /* LaunchScreen.storyboard */,
@@ -99,7 +111,7 @@
 				TargetAttributes = {
 					6B92EACA2062896B00C051C7 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -126,8 +138,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B92EAE820628A9D00C051C7 /* seed.json in Resources */,
 				6B92EADC2062896B00C051C7 /* LaunchScreen.storyboard in Resources */,
 				6B92EAD92062896B00C051C7 /* Assets.xcassets in Resources */,
+				6B92EAE720628A9D00C051C7 /* attribution.txt in Resources */,
 				6B92EAD42062896B00C051C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +156,8 @@
 				6B92EAD12062896B00C051C7 /* ViewController.swift in Sources */,
 				6B92EACF2062896B00C051C7 /* AppDelegate.swift in Sources */,
 				6B92EAD72062896B00C051C7 /* Babble_Tea_Finder.xcdatamodeld in Sources */,
+				6B92EAE420628A5800C051C7 /* CoreDataStack.swift in Sources */,
+				6B92EAEA206299F800C051C7 /* FilterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +294,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Babble Tea Finder/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chi..Babble-Tea-Finder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -292,11 +310,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Babble Tea Finder/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chi..Babble-Tea-Finder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
