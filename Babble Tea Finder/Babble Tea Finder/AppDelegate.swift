@@ -13,7 +13,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    lazy var  coreDataStack = CoreDataStack(modelName: "Bubble_Tea_Finder")
+    lazy var  coreDataStack = CoreDataStack(modelName: "Babble_Tea_Finder")
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -33,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func importJSONSeedDataIfNeeded() {
+    
         let fetchRequest = NSFetchRequest<Venue>(entityName: "Venue")
         let count = try! coreDataStack.managedContext.count(for: fetchRequest)
         
@@ -62,7 +63,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let jsonDict = try! JSONSerialization.jsonObject(with: jsonData, options: [.allowFragments]) as! [String: AnyObject]
         let responseDict = jsonDict["response"] as! [String: AnyObject]
         let jsonArray = responseDict["venues"] as! [[String: AnyObject]]
-        
+      
         for jsonDictionary in jsonArray {
             let venueName = jsonDictionary["name"] as? String
             let contactDict = jsonDictionary["contact"] as! [String: String]
@@ -104,7 +105,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             venue.priceInfo = priceInfo
             venue.stats = stats
         }
-        
+          print("inporting JSON Data Completed")
         coreDataStack.saveContext()
     }
     

@@ -65,7 +65,7 @@
                     <navigationItem key="navigationItem" title="Bubble Tea!" id="tQM-dX-bH9">
                         <barButtonItem key="rightBarButtonItem" title="Filter" id="Heo-Mp-K2e">
                             <connections>
-                                <segue destination="3dV-3T-jLP" kind="presentation" id="12S-1U-JoI"/>
+                                <segue destination="3dV-3T-jLP" kind="presentation" identifier="toFilterViewController" id="12S-1U-JoI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -336,6 +336,7 @@
                         <outlet property="moderateVenueCell" destination="ETU-aH-KA3" id="sg0-NY-m6G"/>
                         <outlet property="nameAZSortCell" destination="9NX-YC-6lu" id="xFF-9c-H80"/>
                         <outlet property="nameZASortCell" destination="Xf8-J7-I8n" id="P3D-YA-mi7"/>
+                        <outlet property="numDealsLabel" destination="x0u-V3-U5f" id="2sh-nA-JiY"/>
                         <outlet property="offeringDealCell" destination="xup-jx-qrt" id="cvF-4L-Gn7"/>
                         <outlet property="priceSortCell" destination="Fxa-AS-5BO" id="oyN-Kv-FFu"/>
                         <outlet property="secondPriceCategoryLabel" destination="hAE-1f-17B" id="z1D-6Y-qhi"/>

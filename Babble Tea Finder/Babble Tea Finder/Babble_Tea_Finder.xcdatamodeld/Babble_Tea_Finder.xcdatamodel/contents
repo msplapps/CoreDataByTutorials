@@ -34,11 +34,12 @@
         <relationship name="priceInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PriceInfo" inverseName="venue" inverseEntity="PriceInfo" syncable="YES"/>
         <relationship name="stats" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Stats" inverseName="venue" inverseEntity="Stats" syncable="YES"/>
     </entity>
+    <fetchRequest name="FetchVenues" entity="Venue"/>
     <elements>
-        <element name="Venue" positionX="-36" positionY="9" width="128" height="165"/>
-        <element name="Stats" positionX="0" positionY="72" width="128" height="105"/>
-        <element name="PriceInfo" positionX="27" positionY="108" width="128" height="75"/>
-        <element name="Location" positionX="54" positionY="117" width="128" height="150"/>
         <element name="Category" positionX="9" positionY="108" width="128" height="90"/>
+        <element name="Location" positionX="54" positionY="117" width="128" height="150"/>
+        <element name="PriceInfo" positionX="27" positionY="108" width="128" height="75"/>
+        <element name="Stats" positionX="0" positionY="72" width="128" height="105"/>
+        <element name="Venue" positionX="-36" positionY="9" width="128" height="165"/>
     </elements>
 </model>
